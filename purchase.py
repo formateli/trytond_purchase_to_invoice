@@ -6,8 +6,7 @@ from trytond.pool import Pool, PoolMeta
 __all__ = ['Purchase']
 
 
-class Purchase:
-    __metaclass__ = PoolMeta
+class Purchase(metaclass=PoolMeta):
     __name__ = 'purchase.purchase'
 
     @classmethod
